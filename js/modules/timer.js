@@ -1,7 +1,6 @@
 // Timer
 
-function timer() {
-  const deadLine = '2023-05-20';
+function timer(id, deadline) {
 
   function getTimeRemaining(endtime) {
     let days;
@@ -63,7 +62,7 @@ function timer() {
     }
   }
 
-  setClock('.timer', deadLine);
+  setClock(id, deadline);
 }
 
-module.exports = timer;
+export default timer;
